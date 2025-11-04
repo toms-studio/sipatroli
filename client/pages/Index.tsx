@@ -47,9 +47,9 @@ export default function Index() {
                   Sistem Informasi Patroli Kepolisian RI
                 </p>
                 <p className="text-gray-600 text-sm mb-6">
-                  Platform tablet untuk petugas patroli dengan kemampuan scanning
-                  plat nomor real-time, pencarian kendaraan, dan manajemen
-                  pelanggaran.
+                  Platform tablet untuk petugas patroli dengan kemampuan
+                  scanning plat nomor real-time, pencarian kendaraan, dan
+                  manajemen pelanggaran.
                 </p>
 
                 {/* Features */}

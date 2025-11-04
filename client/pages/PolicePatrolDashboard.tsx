@@ -24,7 +24,7 @@ export default function PolicePatrolDashboard() {
   };
 
   const filteredVehicles = vehicles.filter((v) =>
-    v.plate.toLowerCase().includes(searchInput.toLowerCase())
+    v.plate.toLowerCase().includes(searchInput.toLowerCase()),
   );
 
   const handleSelectSuggestion = (plate: string) => {
@@ -40,7 +40,10 @@ export default function PolicePatrolDashboard() {
           <div className="flex items-center justify-between">
             <div className="flex items-center gap-3">
               <div className="w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center">
-                <span className="material-icons text-white" style={{ fontSize: "20px" }}>
+                <span
+                  className="material-icons text-white"
+                  style={{ fontSize: "20px" }}
+                >
                   person
                 </span>
               </div>
@@ -80,10 +83,15 @@ export default function PolicePatrolDashboard() {
               {/* Panel Header */}
               <div className="px-6 py-4 border-b border-gray-200 flex items-center justify-between">
                 <div className="flex items-center gap-2">
-                  <span className="material-icons text-blue-600" style={{ fontSize: "24px" }}>
+                  <span
+                    className="material-icons text-blue-600"
+                    style={{ fontSize: "24px" }}
+                  >
                     photo_camera
                   </span>
-                  <h2 className="text-lg font-semibold text-gray-900">Pemindaian LPR</h2>
+                  <h2 className="text-lg font-semibold text-gray-900">
+                    Pemindaian LPR
+                  </h2>
                 </div>
                 <div className="flex items-center gap-1 bg-green-50 px-3 py-1 rounded-full">
                   <span className="status-dot online"></span>
@@ -101,7 +109,9 @@ export default function PolicePatrolDashboard() {
                   >
                     <div className="flex items-center justify-between">
                       <div className="flex-1">
-                        <p className="font-bold text-gray-900">{vehicle.plate}</p>
+                        <p className="font-bold text-gray-900">
+                          {vehicle.plate}
+                        </p>
                         <div className="flex items-center gap-4 mt-1 text-xs text-gray-600">
                           <span>{vehicle.lastScanned}</span>
                           <span>{vehicle.accuracy}% Akurasi</span>
@@ -117,10 +127,10 @@ export default function PolicePatrolDashboard() {
                           {vehicle.status === "CURIAN"
                             ? "CURIAN"
                             : vehicle.status === "HIGH"
-                            ? "TINGGI"
-                            : vehicle.status === "CRITICAL"
-                            ? "KRITIS"
-                            : "MEDIUM"}
+                              ? "TINGGI"
+                              : vehicle.status === "CRITICAL"
+                                ? "KRITIS"
+                                : "MEDIUM"}
                         </div>
                       )}
                     </div>
@@ -134,10 +144,15 @@ export default function PolicePatrolDashboard() {
           <div className="space-y-6">
             {/* Search Card */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <h3 className="text-sm font-semibold text-gray-900 mb-4">Pencarian Plat Nomor</h3>
+              <h3 className="text-sm font-semibold text-gray-900 mb-4">
+                Pencarian Plat Nomor
+              </h3>
               <div className="relative">
                 <div className="flex items-center bg-gray-100 rounded-lg px-3 py-2">
-                  <span className="material-icons text-gray-400" style={{ fontSize: "20px" }}>
+                  <span
+                    className="material-icons text-gray-400"
+                    style={{ fontSize: "20px" }}
+                  >
                     search
                   </span>
                   <input
@@ -172,8 +187,8 @@ export default function PolicePatrolDashboard() {
                             {vehicle.status === "BERSIH"
                               ? "BERSIH"
                               : vehicle.status === "CURIAN"
-                              ? "CURIAN"
-                              : "ALERT"}
+                                ? "CURIAN"
+                                : "ALERT"}
                           </span>
                         </div>
                       </button>
@@ -185,7 +200,9 @@ export default function PolicePatrolDashboard() {
 
             {/* Statistics Card */}
             <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-              <h3 className="text-sm font-semibold text-gray-900 mb-4">Statistik Peringatan</h3>
+              <h3 className="text-sm font-semibold text-gray-900 mb-4">
+                Statistik Peringatan
+              </h3>
               <div className="grid grid-cols-2 gap-4">
                 <div className="text-center p-3 bg-red-50 rounded-lg">
                   <p className="text-2xl font-bold text-red-700">3</p>

@@ -27,9 +27,11 @@ export default function CommandCenterReports() {
       report.location.toLowerCase().includes(searchInput.toLowerCase());
 
     if (activeFilter === "Semua") return matchesSearch;
-    if (activeFilter === "Pencurian") return matchesSearch && report.type === "PENCURIAN";
+    if (activeFilter === "Pencurian")
+      return matchesSearch && report.type === "PENCURIAN";
     if (activeFilter === "DPO") return matchesSearch && report.type === "DPO";
-    if (activeFilter === "Aktif") return matchesSearch && report.status === "AKTIF";
+    if (activeFilter === "Aktif")
+      return matchesSearch && report.status === "AKTIF";
     return matchesSearch;
   });
 
@@ -80,12 +82,22 @@ export default function CommandCenterReports() {
             <table className="w-full text-sm">
               <thead>
                 <tr className="border-b border-slate-700 bg-slate-700/50">
-                  <th className="px-6 py-3 text-left font-semibold">No Kendaraan</th>
+                  <th className="px-6 py-3 text-left font-semibold">
+                    No Kendaraan
+                  </th>
                   <th className="px-6 py-3 text-left font-semibold">Tipe</th>
-                  <th className="px-6 py-3 text-left font-semibold">No Laporan / Kasus</th>
-                  <th className="px-6 py-3 text-left font-semibold">Status / Prioritas</th>
-                  <th className="px-6 py-3 text-left font-semibold">Lokasi / Penerbit</th>
-                  <th className="px-6 py-3 text-left font-semibold">Pelapor / Aksi</th>
+                  <th className="px-6 py-3 text-left font-semibold">
+                    No Laporan / Kasus
+                  </th>
+                  <th className="px-6 py-3 text-left font-semibold">
+                    Status / Prioritas
+                  </th>
+                  <th className="px-6 py-3 text-left font-semibold">
+                    Lokasi / Penerbit
+                  </th>
+                  <th className="px-6 py-3 text-left font-semibold">
+                    Pelapor / Aksi
+                  </th>
                   <th className="px-6 py-3 text-left font-semibold">Waktu</th>
                 </tr>
               </thead>
@@ -97,19 +109,23 @@ export default function CommandCenterReports() {
                       className="border-b border-slate-700 hover:bg-slate-700/30 transition-colors"
                     >
                       <td className="px-6 py-4">
-                        <span className="font-semibold text-amber-400">{report.plate}</span>
+                        <span className="font-semibold text-amber-400">
+                          {report.plate}
+                        </span>
                       </td>
                       <td className="px-6 py-4">
                         <span className="text-gray-300">
                           {report.type === "PENCURIAN"
                             ? "Pencurian"
                             : report.type === "DPO"
-                            ? "DPO"
-                            : "Pelanggaran"}
+                              ? "DPO"
+                              : "Pelanggaran"}
                         </span>
                       </td>
                       <td className="px-6 py-4">
-                        <span className="text-gray-300">{report.reportNumber}</span>
+                        <span className="text-gray-300">
+                          {report.reportNumber}
+                        </span>
                       </td>
                       <td className="px-6 py-4">
                         <div className="flex items-center gap-2">
@@ -133,13 +149,18 @@ export default function CommandCenterReports() {
                         <span className="text-gray-300">{report.reporter}</span>
                       </td>
                       <td className="px-6 py-4">
-                        <span className="text-gray-400 text-xs">{report.timestamp}</span>
+                        <span className="text-gray-400 text-xs">
+                          {report.timestamp}
+                        </span>
                       </td>
                     </tr>
                   ))
                 ) : (
                   <tr>
-                    <td colSpan={7} className="px-6 py-8 text-center text-gray-400">
+                    <td
+                      colSpan={7}
+                      className="px-6 py-8 text-center text-gray-400"
+                    >
                       Tidak ada laporan yang sesuai dengan pencarian
                     </td>
                   </tr>

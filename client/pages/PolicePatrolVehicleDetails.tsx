@@ -50,7 +50,9 @@ export default function PolicePatrolVehicleDetails() {
             <span className="text-sm font-medium">Kembali</span>
           </button>
           <h1 className="text-2xl font-bold text-gray-900">Detail Kendaraan</h1>
-          <p className="text-lg font-semibold text-blue-600 mt-2">{vehicle.plate}</p>
+          <p className="text-lg font-semibold text-blue-600 mt-2">
+            {vehicle.plate}
+          </p>
         </div>
       </div>
 
@@ -85,14 +87,22 @@ export default function PolicePatrolVehicleDetails() {
         {/* Vehicle Tab */}
         {activeTab === "vehicle" && (
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Informasi Kendaraan</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              Informasi Kendaraan
+            </h3>
             <div className="grid grid-cols-2 gap-6">
               <div>
-                <p className="text-xs font-semibold text-gray-600 mb-1">Nomor Plat</p>
-                <p className="text-sm font-semibold text-gray-900">{vehicle.plate}</p>
+                <p className="text-xs font-semibold text-gray-600 mb-1">
+                  Nomor Plat
+                </p>
+                <p className="text-sm font-semibold text-gray-900">
+                  {vehicle.plate}
+                </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-600 mb-1">Status</p>
+                <p className="text-xs font-semibold text-gray-600 mb-1">
+                  Status
+                </p>
                 <div
                   className={`inline-block px-3 py-1 rounded text-xs font-semibold ${
                     statusColors[vehicle.status]?.bg || "bg-gray-100"
@@ -102,22 +112,36 @@ export default function PolicePatrolVehicleDetails() {
                 </div>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-600 mb-1">Merk/Tipe</p>
+                <p className="text-xs font-semibold text-gray-600 mb-1">
+                  Merk/Tipe
+                </p>
                 <p className="text-sm font-semibold text-gray-900">
                   {vehicle.brand} {vehicle.type}
                 </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-600 mb-1">Tahun</p>
-                <p className="text-sm font-semibold text-gray-900">{vehicle.year}</p>
+                <p className="text-xs font-semibold text-gray-600 mb-1">
+                  Tahun
+                </p>
+                <p className="text-sm font-semibold text-gray-900">
+                  {vehicle.year}
+                </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-600 mb-1">Warna</p>
-                <p className="text-sm font-semibold text-gray-900">{vehicle.color}</p>
+                <p className="text-xs font-semibold text-gray-600 mb-1">
+                  Warna
+                </p>
+                <p className="text-sm font-semibold text-gray-900">
+                  {vehicle.color}
+                </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-600 mb-1">No. Rangka</p>
-                <p className="text-sm font-semibold text-gray-900">{vehicle.frameNumber}</p>
+                <p className="text-xs font-semibold text-gray-600 mb-1">
+                  No. Rangka
+                </p>
+                <p className="text-sm font-semibold text-gray-900">
+                  {vehicle.frameNumber}
+                </p>
               </div>
             </div>
           </div>
@@ -126,26 +150,44 @@ export default function PolicePatrolVehicleDetails() {
         {/* Owner Tab */}
         {activeTab === "owner" && (
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Informasi Pemilik</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              Informasi Pemilik
+            </h3>
             <div className="grid grid-cols-2 gap-6">
               <div>
-                <p className="text-xs font-semibold text-gray-600 mb-1">Nama Lengkap</p>
-                <p className="text-sm font-semibold text-gray-900">{vehicle.owner.name}</p>
+                <p className="text-xs font-semibold text-gray-600 mb-1">
+                  Nama Lengkap
+                </p>
+                <p className="text-sm font-semibold text-gray-900">
+                  {vehicle.owner.name}
+                </p>
               </div>
               <div>
                 <p className="text-xs font-semibold text-gray-600 mb-1">NIK</p>
-                <p className="text-sm font-semibold text-gray-900">{vehicle.owner.nik}</p>
+                <p className="text-sm font-semibold text-gray-900">
+                  {vehicle.owner.nik}
+                </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-600 mb-1">Tanggal Lahir</p>
-                <p className="text-sm font-semibold text-gray-900">{vehicle.owner.dateOfBirth}</p>
+                <p className="text-xs font-semibold text-gray-600 mb-1">
+                  Tanggal Lahir
+                </p>
+                <p className="text-sm font-semibold text-gray-900">
+                  {vehicle.owner.dateOfBirth}
+                </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-600 mb-1">No. SIM</p>
-                <p className="text-sm font-semibold text-gray-900">{vehicle.owner.simNumber}</p>
+                <p className="text-xs font-semibold text-gray-600 mb-1">
+                  No. SIM
+                </p>
+                <p className="text-sm font-semibold text-gray-900">
+                  {vehicle.owner.simNumber}
+                </p>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-600 mb-1">Status SIM</p>
+                <p className="text-xs font-semibold text-gray-600 mb-1">
+                  Status SIM
+                </p>
                 <div
                   className={`inline-block px-3 py-1 rounded text-xs font-semibold ${
                     statusColors[vehicle.owner.simStatus]?.bg || "bg-gray-100"
@@ -155,8 +197,12 @@ export default function PolicePatrolVehicleDetails() {
                 </div>
               </div>
               <div>
-                <p className="text-xs font-semibold text-gray-600 mb-1">No. Telepon</p>
-                <p className="text-sm font-semibold text-gray-900">{vehicle.owner.phone}</p>
+                <p className="text-xs font-semibold text-gray-600 mb-1">
+                  No. Telepon
+                </p>
+                <p className="text-sm font-semibold text-gray-900">
+                  {vehicle.owner.phone}
+                </p>
               </div>
             </div>
           </div>
@@ -165,18 +211,25 @@ export default function PolicePatrolVehicleDetails() {
         {/* Violations Tab */}
         {activeTab === "violations" && (
           <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
-            <h3 className="text-lg font-semibold text-gray-900 mb-4">Riwayat Pelanggaran</h3>
+            <h3 className="text-lg font-semibold text-gray-900 mb-4">
+              Riwayat Pelanggaran
+            </h3>
             {vehicle.violations.length > 0 ? (
               <>
                 <div className="space-y-3 mb-6">
                   {vehicle.violations.map((violation, idx) => (
-                    <div key={idx} className="border border-gray-200 rounded-lg p-4">
+                    <div
+                      key={idx}
+                      className="border border-gray-200 rounded-lg p-4"
+                    >
                       <div className="flex justify-between items-start">
                         <div>
                           <p className="text-sm font-semibold text-gray-900">
                             {violation.description}
                           </p>
-                          <p className="text-xs text-gray-600 mt-1">{violation.date}</p>
+                          <p className="text-xs text-gray-600 mt-1">
+                            {violation.date}
+                          </p>
                         </div>
                         <p className="text-sm font-semibold text-gray-900">
                           Rp {violation.fine.toLocaleString("id-ID")}
@@ -186,7 +239,9 @@ export default function PolicePatrolVehicleDetails() {
                   ))}
                 </div>
                 <div className="bg-red-50 border border-red-200 rounded-lg p-4">
-                  <p className="text-xs font-semibold text-red-700 mb-1">Total Tunggakan</p>
+                  <p className="text-xs font-semibold text-red-700 mb-1">
+                    Total Tunggakan
+                  </p>
                   <p className="text-xl font-bold text-red-700">
                     Rp {totalFines.toLocaleString("id-ID")}
                   </p>
@@ -223,7 +278,9 @@ export default function PolicePatrolVehicleDetails() {
                         }`}
                         style={{ fontSize: "24px" }}
                       >
-                        {report.type === "LAPORAN_PENCURIAN" ? "warning" : "shield"}
+                        {report.type === "LAPORAN_PENCURIAN"
+                          ? "warning"
+                          : "shield"}
                       </span>
                     </div>
                     <div className="flex-1">
@@ -232,7 +289,9 @@ export default function PolicePatrolVehicleDetails() {
                           ? "LAPORAN PENCURIAN"
                           : "DAFTAR PENCARIAN ORANG"}
                       </h4>
-                      <p className="text-xs text-gray-600 mt-1">{report.timestamp}</p>
+                      <p className="text-xs text-gray-600 mt-1">
+                        {report.timestamp}
+                      </p>
                     </div>
                   </div>
 
@@ -240,46 +299,72 @@ export default function PolicePatrolVehicleDetails() {
                     {report.type === "LAPORAN_PENCURIAN" && (
                       <>
                         <div>
-                          <p className="text-xs font-semibold text-gray-600">No. Laporan</p>
+                          <p className="text-xs font-semibold text-gray-600">
+                            No. Laporan
+                          </p>
                           <p className="text-sm text-gray-900">
                             {report.details.reportNumber}
                           </p>
                         </div>
                         <div>
-                          <p className="text-xs font-semibold text-gray-600">Lokasi</p>
-                          <p className="text-sm text-gray-900">{report.details.location}</p>
+                          <p className="text-xs font-semibold text-gray-600">
+                            Lokasi
+                          </p>
+                          <p className="text-sm text-gray-900">
+                            {report.details.location}
+                          </p>
                         </div>
                         <div>
-                          <p className="text-xs font-semibold text-gray-600">Status</p>
-                          <p className="text-sm text-gray-900">{report.details.status}</p>
+                          <p className="text-xs font-semibold text-gray-600">
+                            Status
+                          </p>
+                          <p className="text-sm text-gray-900">
+                            {report.details.status}
+                          </p>
                         </div>
                         <div>
-                          <p className="text-xs font-semibold text-gray-600">Pelapor</p>
-                          <p className="text-sm text-gray-900">{report.details.reporter}</p>
+                          <p className="text-xs font-semibold text-gray-600">
+                            Pelapor
+                          </p>
+                          <p className="text-sm text-gray-900">
+                            {report.details.reporter}
+                          </p>
                         </div>
                       </>
                     )}
                     {report.type === "DAFTAR_PENCARIAN_ORANG" && (
                       <>
                         <div>
-                          <p className="text-xs font-semibold text-gray-600">Kasus</p>
-                          <p className="text-sm text-gray-900">{report.details.case}</p>
+                          <p className="text-xs font-semibold text-gray-600">
+                            Kasus
+                          </p>
+                          <p className="text-sm text-gray-900">
+                            {report.details.case}
+                          </p>
                         </div>
                         <div>
-                          <p className="text-xs font-semibold text-gray-600">Penerbit</p>
+                          <p className="text-xs font-semibold text-gray-600">
+                            Penerbit
+                          </p>
                           <p className="text-sm text-gray-900">
                             {report.details.publisher}
                           </p>
                         </div>
                         <div>
-                          <p className="text-xs font-semibold text-gray-600">Prioritas</p>
+                          <p className="text-xs font-semibold text-gray-600">
+                            Prioritas
+                          </p>
                           <p className="text-sm text-gray-900">
                             {report.details.priority}
                           </p>
                         </div>
                         <div>
-                          <p className="text-xs font-semibold text-gray-600">Tindakan</p>
-                          <p className="text-sm text-gray-900">{report.details.action}</p>
+                          <p className="text-xs font-semibold text-gray-600">
+                            Tindakan
+                          </p>
+                          <p className="text-sm text-gray-900">
+                            {report.details.action}
+                          </p>
                         </div>
                       </>
                     )}

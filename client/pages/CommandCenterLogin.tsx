@@ -17,7 +17,10 @@ export default function CommandCenterLogin() {
         <div className="text-center mb-8">
           <div className="flex justify-center mb-4">
             <div className="w-16 h-16 bg-gradient-to-br from-amber-600 to-amber-700 rounded-lg flex items-center justify-center">
-              <span className="material-icons text-white" style={{ fontSize: "40px" }}>
+              <span
+                className="material-icons text-white"
+                style={{ fontSize: "40px" }}
+              >
                 security
               </span>
             </div>

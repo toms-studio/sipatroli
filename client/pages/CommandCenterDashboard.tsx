@@ -18,7 +18,7 @@ export default function CommandCenterDashboard() {
   const selectedUnit = mockPatrolUnits.find((u) => u.id === selectedUnitId);
 
   const filteredUnits = mockPatrolUnits.filter((unit) =>
-    unit.unitId.toLowerCase().includes(unitSearchInput.toLowerCase())
+    unit.unitId.toLowerCase().includes(unitSearchInput.toLowerCase()),
   );
 
   const handleUnitClick = (unitId: string) => {
@@ -28,7 +28,12 @@ export default function CommandCenterDashboard() {
   const handleReportSubmit = () => {
     console.log("Report submitted:", reportData);
     setShowReportModal(false);
-    setReportData({ plate: "", alertLevel: "TINGGI", type: "", description: "" });
+    setReportData({
+      plate: "",
+      alertLevel: "TINGGI",
+      type: "",
+      description: "",
+    });
   };
 
   return (
@@ -38,7 +43,10 @@ export default function CommandCenterDashboard() {
         <div className="max-w-7xl mx-auto flex items-center justify-between">
           <div className="flex items-center gap-3">
             <div className="w-10 h-10 bg-amber-600 rounded-lg flex items-center justify-center">
-              <span className="material-icons text-white" style={{ fontSize: "20px" }}>
+              <span
+                className="material-icons text-white"
+                style={{ fontSize: "20px" }}
+              >
                 security
               </span>
             </div>
@@ -61,7 +69,9 @@ export default function CommandCenterDashboard() {
                 <p className="text-2xl font-bold text-amber-400">24</p>
               </div>
               <div>
-                <p className="text-xs text-gray-400 mb-1">Peringatan Hari Ini</p>
+                <p className="text-xs text-gray-400 mb-1">
+                  Peringatan Hari Ini
+                </p>
                 <p className="text-2xl font-bold text-red-400">156</p>
               </div>
             </div>
@@ -76,7 +86,10 @@ export default function CommandCenterDashboard() {
                   onChange={(e) => setPlateSearchInput(e.target.value)}
                   className="px-4 py-2 bg-slate-700 border border-slate-600 rounded-lg text-sm placeholder-gray-500 focus:outline-none focus:ring-2 focus:ring-amber-500"
                 />
-                <span className="material-icons absolute right-3 top-2.5 text-gray-400" style={{ fontSize: "18px" }}>
+                <span
+                  className="material-icons absolute right-3 top-2.5 text-gray-400"
+                  style={{ fontSize: "18px" }}
+                >
                   search
                 </span>
               </div>
@@ -101,7 +114,10 @@ export default function CommandCenterDashboard() {
           {/* Sidebar Header */}
           <div className="px-4 py-4 border-b border-slate-700">
             <div className="flex items-center gap-2 mb-3">
-              <span className="material-icons text-amber-500" style={{ fontSize: "20px" }}>
+              <span
+                className="material-icons text-amber-500"
+                style={{ fontSize: "20px" }}
+              >
                 directions_car
               </span>
               <h2 className="font-semibold">Unit Patroli Aktif</h2>
@@ -150,24 +166,35 @@ export default function CommandCenterDashboard() {
             </div>
             <div className="text-center z-10">
               <p className="text-3xl font-bold text-amber-500 mb-4">🗺️</p>
-              <p className="text-gray-400">Jakarta Area - Patrol Units Active</p>
+              <p className="text-gray-400">
+                Jakarta Area - Patrol Units Active
+              </p>
             </div>
           </div>
 
           {/* Map Controls */}
           <div className="absolute bottom-6 right-6 flex gap-3">
             <button className="w-12 h-12 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center transition-colors border border-slate-600">
-              <span className="material-icons text-gray-300" style={{ fontSize: "20px" }}>
+              <span
+                className="material-icons text-gray-300"
+                style={{ fontSize: "20px" }}
+              >
                 my_location
               </span>
             </button>
             <button className="w-12 h-12 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center transition-colors border border-slate-600">
-              <span className="material-icons text-gray-300" style={{ fontSize: "20px" }}>
+              <span
+                className="material-icons text-gray-300"
+                style={{ fontSize: "20px" }}
+              >
                 layers
               </span>
             </button>
             <button className="w-12 h-12 bg-slate-700 hover:bg-slate-600 rounded-full flex items-center justify-center transition-colors border border-slate-600">
-              <span className="material-icons text-gray-300" style={{ fontSize: "20px" }}>
+              <span
+                className="material-icons text-gray-300"
+                style={{ fontSize: "20px" }}
+              >
                 refresh
               </span>
             </button>
@@ -184,7 +211,10 @@ export default function CommandCenterDashboard() {
                 onClick={() => setSelectedUnitId(null)}
                 className="p-1 hover:bg-slate-700 rounded transition-colors"
               >
-                <span className="material-icons text-gray-400" style={{ fontSize: "20px" }}>
+                <span
+                  className="material-icons text-gray-400"
+                  style={{ fontSize: "20px" }}
+                >
                   close
                 </span>
               </button>
@@ -194,11 +224,15 @@ export default function CommandCenterDashboard() {
             <div className="flex-1 overflow-y-auto px-4 py-4 space-y-6">
               {/* Informasi Unit */}
               <div>
-                <h4 className="text-xs font-semibold text-amber-400 mb-3">Informasi Unit</h4>
+                <h4 className="text-xs font-semibold text-amber-400 mb-3">
+                  Informasi Unit
+                </h4>
                 <div className="space-y-3">
                   <div>
                     <p className="text-xs text-gray-400">ID Unit</p>
-                    <p className="text-sm font-semibold">{selectedUnit.unitId}</p>
+                    <p className="text-sm font-semibold">
+                      {selectedUnit.unitId}
+                    </p>
                   </div>
                   <div>
                     <p className="text-xs text-gray-400">Status</p>
@@ -208,34 +242,48 @@ export default function CommandCenterDashboard() {
                   </div>
                   <div>
                     <p className="text-xs text-gray-400">Plat Kendaraan</p>
-                    <p className="text-sm font-semibold">{selectedUnit.plate}</p>
+                    <p className="text-sm font-semibold">
+                      {selectedUnit.plate}
+                    </p>
                   </div>
                   <div>
                     <p className="text-xs text-gray-400">Lokasi</p>
-                    <p className="text-sm font-semibold">{selectedUnit.location.address}</p>
+                    <p className="text-sm font-semibold">
+                      {selectedUnit.location.address}
+                    </p>
                   </div>
                 </div>
               </div>
 
               {/* Informasi Petugas */}
               <div>
-                <h4 className="text-xs font-semibold text-amber-400 mb-3">Informasi Petugas</h4>
+                <h4 className="text-xs font-semibold text-amber-400 mb-3">
+                  Informasi Petugas
+                </h4>
                 <div className="space-y-3">
                   <div>
                     <p className="text-xs text-gray-400">Nama</p>
-                    <p className="text-sm font-semibold">{selectedUnit.officer.name}</p>
+                    <p className="text-sm font-semibold">
+                      {selectedUnit.officer.name}
+                    </p>
                   </div>
                   <div>
                     <p className="text-xs text-gray-400">No. Lencana</p>
-                    <p className="text-sm font-semibold">{selectedUnit.officer.badge}</p>
+                    <p className="text-sm font-semibold">
+                      {selectedUnit.officer.badge}
+                    </p>
                   </div>
                   <div>
                     <p className="text-xs text-gray-400">Mulai Shift</p>
-                    <p className="text-sm font-semibold">{selectedUnit.officer.shiftStart}</p>
+                    <p className="text-sm font-semibold">
+                      {selectedUnit.officer.shiftStart}
+                    </p>
                   </div>
                   <div>
                     <p className="text-xs text-gray-400">Durasi</p>
-                    <p className="text-sm font-semibold">{selectedUnit.officer.shiftDuration} jam</p>
+                    <p className="text-sm font-semibold">
+                      {selectedUnit.officer.shiftDuration} jam
+                    </p>
                   </div>
                 </div>
               </div>
@@ -260,7 +308,10 @@ export default function CommandCenterDashboard() {
                 onClick={() => setShowReportModal(false)}
                 className="p-1 hover:bg-slate-700 rounded transition-colors"
               >
-                <span className="material-icons text-gray-400" style={{ fontSize: "20px" }}>
+                <span
+                  className="material-icons text-gray-400"
+                  style={{ fontSize: "20px" }}
+                >
                   close
                 </span>
               </button>
@@ -332,7 +383,10 @@ export default function CommandCenterDashboard() {
                 <textarea
                   value={reportData.description}
                   onChange={(e) =>
-                    setReportData({ ...reportData, description: e.target.value })
+                    setReportData({
+                      ...reportData,
+                      description: e.target.value,
+                    })
                   }
                   placeholder="Masukkan deskripsi laporan"
                   rows={4}

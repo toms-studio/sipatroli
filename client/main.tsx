@@ -28,12 +28,27 @@ const App = () => (
           <Route path="/" element={<Index />} />
           {/* Police Patrol App Routes */}
           <Route path="/police-patrol/login" element={<PolicePatrolLogin />} />
-          <Route path="/police-patrol/dashboard" element={<PolicePatrolDashboard />} />
-          <Route path="/police-patrol/vehicle/:plate" element={<PolicePatrolVehicleDetails />} />
+          <Route
+            path="/police-patrol/dashboard"
+            element={<PolicePatrolDashboard />}
+          />
+          <Route
+            path="/police-patrol/vehicle/:plate"
+            element={<PolicePatrolVehicleDetails />}
+          />
           {/* Command Center App Routes */}
-          <Route path="/command-center/login" element={<CommandCenterLogin />} />
-          <Route path="/command-center/dashboard" element={<CommandCenterDashboard />} />
-          <Route path="/command-center/reports" element={<CommandCenterReports />} />
+          <Route
+            path="/command-center/login"
+            element={<CommandCenterLogin />}
+          />
+          <Route
+            path="/command-center/dashboard"
+            element={<CommandCenterDashboard />}
+          />
+          <Route
+            path="/command-center/reports"
+            element={<CommandCenterReports />}
+          />
           {/* Catch-all route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
@@ -50,7 +65,7 @@ if (rootElement) {
   root.render(
     <React.StrictMode>
       <App />
-    </React.StrictMode>
+    </React.StrictMode>,
   );
 
   // Handle HMR updates
@@ -59,7 +74,7 @@ if (rootElement) {
       root.render(
         <React.StrictMode>
           <App />
-        </React.StrictMode>
+        </React.StrictMode>,
       );
     });
   }

@@ -146,8 +146,8 @@ export const mockVehicles: Record<string, Vehicle> = {
     accuracy: 95,
     speed: 45,
     location: {
-      latitude: -6.2100,
-      longitude: 106.8500,
+      latitude: -6.21,
+      longitude: 106.85,
       address: "Jl. Gatot Subroto, Jakarta",
     },
   },
@@ -176,8 +176,8 @@ export const mockVehicles: Record<string, Vehicle> = {
     accuracy: 92,
     speed: 78,
     location: {
-      latitude: -6.2120,
-      longitude: 106.8520,
+      latitude: -6.212,
+      longitude: 106.852,
       address: "Jl. MH Thamrin, Jakarta",
     },
   },
@@ -204,8 +204,8 @@ export const mockVehicles: Record<string, Vehicle> = {
     accuracy: 90,
     speed: 55,
     location: {
-      latitude: -6.2150,
-      longitude: 106.8480,
+      latitude: -6.215,
+      longitude: 106.848,
       address: "Jl. Bintaro, Jakarta Selatan",
     },
   },
@@ -227,7 +227,11 @@ export const mockVehicles: Record<string, Vehicle> = {
       phone: "0816-3456-7890",
     },
     violations: [
-      { date: "2025-01-19", description: "Mengemudi Ugal-Ugalan", fine: 1000000 },
+      {
+        date: "2025-01-19",
+        description: "Mengemudi Ugal-Ugalan",
+        fine: 1000000,
+      },
     ],
     reports: [
       {
@@ -246,8 +250,8 @@ export const mockVehicles: Record<string, Vehicle> = {
     accuracy: 88,
     speed: 92,
     location: {
-      latitude: -6.2170,
-      longitude: 106.8410,
+      latitude: -6.217,
+      longitude: 106.841,
       address: "Jl. Slipi, Jakarta Pusat",
     },
   },
@@ -279,8 +283,8 @@ export const mockPatrolUnits: PatrolUnit[] = [
     plate: "B 2222 BBB",
     status: "AKTIF",
     location: {
-      latitude: -6.2100,
-      longitude: 106.8500,
+      latitude: -6.21,
+      longitude: 106.85,
       address: "Jl. Gatot Subroto, Jakarta",
     },
     officer: {
@@ -298,8 +302,8 @@ export const mockPatrolUnits: PatrolUnit[] = [
     plate: "B 3333 CCC",
     status: "AKTIF",
     location: {
-      latitude: -6.2120,
-      longitude: 106.8520,
+      latitude: -6.212,
+      longitude: 106.852,
       address: "Jl. MH Thamrin, Jakarta",
     },
     officer: {
@@ -317,8 +321,8 @@ export const mockPatrolUnits: PatrolUnit[] = [
     plate: "B 4444 DDD",
     status: "AKTIF",
     location: {
-      latitude: -6.2150,
-      longitude: 106.8480,
+      latitude: -6.215,
+      longitude: 106.848,
       address: "Jl. Bintaro, Jakarta Selatan",
     },
     officer: {
