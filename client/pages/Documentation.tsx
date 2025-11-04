@@ -53,7 +53,8 @@ export default function Documentation() {
               </p>
               <p className="text-sm text-gray-700">
                 Field application for patrol officers to monitor and respond to
-                license plate recognition data in real-time during active patrols.
+                license plate recognition data in real-time during active
+                patrols.
               </p>
             </div>
 
@@ -63,8 +64,8 @@ export default function Documentation() {
               </p>
               <p className="text-sm text-gray-700">
                 Command center dashboard for monitoring all active patrol units,
-                managing vehicle reports, and coordinating enforcement activities
-                across the jurisdiction.
+                managing vehicle reports, and coordinating enforcement
+                activities across the jurisdiction.
               </p>
             </div>
           </div>
@@ -72,10 +73,10 @@ export default function Documentation() {
           <div className="bg-green-50 border border-green-200 rounded-lg p-4 mt-6">
             <p className="font-semibold text-gray-900 mb-2">Core Capability</p>
             <p className="text-sm text-gray-700">
-              The system integrates real-time License Plate Recognition (LPR) data
-              from vehicle-mounted cameras with government vehicle databases to
-              provide instant alerts about stolen vehicles, suspended licenses,
-              expired registrations, and wanted persons.
+              The system integrates real-time License Plate Recognition (LPR)
+              data from vehicle-mounted cameras with government vehicle
+              databases to provide instant alerts about stolen vehicles,
+              suspended licenses, expired registrations, and wanted persons.
             </p>
           </div>
         </section>
@@ -119,7 +120,8 @@ export default function Documentation() {
                     LPR Camera + DPU (Data Processing Unit)
                   </td>
                   <td className="px-4 py-3 text-gray-700">
-                    Vehicle scanning, image capture, OCR processing, GPS tracking
+                    Vehicle scanning, image capture, OCR processing, GPS
+                    tracking
                   </td>
                   <td className="px-4 py-3 text-gray-700">Hardware Provider</td>
                 </tr>
@@ -141,13 +143,17 @@ export default function Documentation() {
                   <td className="px-4 py-3 text-gray-700">
                     User interface, report management, alert display
                   </td>
-                  <td className="px-4 py-3 text-gray-700">This Project (In Scope)</td>
+                  <td className="px-4 py-3 text-gray-700">
+                    This Project (In Scope)
+                  </td>
                 </tr>
               </tbody>
             </table>
           </div>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">How It Works</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            How It Works
+          </h3>
 
           <div className="space-y-3">
             {[
@@ -180,7 +186,10 @@ export default function Documentation() {
                 desc: "Officers can create detailed incident reports directly from the system",
               },
             ].map((item, idx) => (
-              <div key={idx} className="flex gap-4 pb-3 border-b border-gray-200 last:border-b-0">
+              <div
+                key={idx}
+                className="flex gap-4 pb-3 border-b border-gray-200 last:border-b-0"
+              >
                 <div className="flex-shrink-0">
                   <div className="flex items-center justify-center h-8 w-8 rounded-full bg-blue-600 text-white text-sm font-semibold">
                     {idx + 1}
@@ -222,8 +231,14 @@ export default function Documentation() {
                     "Offline capability for viewing previously loaded data",
                     "Connection status indicators (LPR, Database, GPS, 4G)",
                   ].map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
-                      <span className="material-icons text-green-600 flex-shrink-0" style={{ fontSize: "18px" }}>
+                    <li
+                      key={idx}
+                      className="flex items-start gap-2 text-sm text-gray-700"
+                    >
+                      <span
+                        className="material-icons text-green-600 flex-shrink-0"
+                        style={{ fontSize: "18px" }}
+                      >
                         check_circle
                       </span>
                       <span>{feature}</span>
@@ -249,8 +264,14 @@ export default function Documentation() {
                     "System-wide statistics (active units, warnings today, critical alerts)",
                     "Vehicle incident reporting functionality",
                   ].map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
-                      <span className="material-icons text-green-600 flex-shrink-0" style={{ fontSize: "18px" }}>
+                    <li
+                      key={idx}
+                      className="flex items-start gap-2 text-sm text-gray-700"
+                    >
+                      <span
+                        className="material-icons text-green-600 flex-shrink-0"
+                        style={{ fontSize: "18px" }}
+                      >
                         check_circle
                       </span>
                       <span>{feature}</span>
@@ -272,8 +293,14 @@ export default function Documentation() {
                     "Report history and audit trail",
                     "Report search and filtering",
                   ].map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
-                      <span className="material-icons text-green-600 flex-shrink-0" style={{ fontSize: "18px" }}>
+                    <li
+                      key={idx}
+                      className="flex items-start gap-2 text-sm text-gray-700"
+                    >
+                      <span
+                        className="material-icons text-green-600 flex-shrink-0"
+                        style={{ fontSize: "18px" }}
+                      >
                         check_circle
                       </span>
                       <span>{feature}</span>
@@ -293,8 +320,14 @@ export default function Documentation() {
                     "Join LPR metadata with vehicle ownership and violation data",
                     "Cache frequently accessed data for performance",
                   ].map((feature, idx) => (
-                    <li key={idx} className="flex items-start gap-2 text-sm text-gray-700">
-                      <span className="material-icons text-green-600 flex-shrink-0" style={{ fontSize: "18px" }}>
+                    <li
+                      key={idx}
+                      className="flex items-start gap-2 text-sm text-gray-700"
+                    >
+                      <span
+                        className="material-icons text-green-600 flex-shrink-0"
+                        style={{ fontSize: "18px" }}
+                      >
                         check_circle
                       </span>
                       <span>{feature}</span>
@@ -316,9 +349,10 @@ export default function Documentation() {
                   Hardware & Infrastructure
                 </p>
                 <p className="ml-4 text-gray-700">
-                  LPR camera hardware, DPU hardware/firmware, OCR algorithm development,
-                  GPS tracking device installation, 4G/5G connectivity setup, hardware
-                  mounting or vehicle installation services.
+                  LPR camera hardware, DPU hardware/firmware, OCR algorithm
+                  development, GPS tracking device installation, 4G/5G
+                  connectivity setup, hardware mounting or vehicle installation
+                  services.
                 </p>
               </div>
 
@@ -327,8 +361,9 @@ export default function Documentation() {
                   LPR Data Management
                 </p>
                 <p className="ml-4 text-gray-700">
-                  Image processing and plate recognition, LPR database infrastructure,
-                  LPR data storage/archiving, LPR accuracy tuning, camera calibration.
+                  Image processing and plate recognition, LPR database
+                  infrastructure, LPR data storage/archiving, LPR accuracy
+                  tuning, camera calibration.
                 </p>
               </div>
 
@@ -337,9 +372,10 @@ export default function Documentation() {
                   Government Data Systems
                 </p>
                 <p className="ml-4 text-gray-700">
-                  Government vehicle registration database, driver license database,
-                  violation record database, payment processing, court system integration,
-                  government API development (we only consume).
+                  Government vehicle registration database, driver license
+                  database, violation record database, payment processing, court
+                  system integration, government API development (we only
+                  consume).
                 </p>
               </div>
 
@@ -348,10 +384,11 @@ export default function Documentation() {
                   Extended Features (Future Phase)
                 </p>
                 <p className="ml-4 text-gray-700">
-                  ANPR for multiple countries, facial recognition, vehicle image gallery,
-                  video recording, officer-command chat, route planning, traffic system
-                  integration, automated ticketing, mobile payments, public portal, analytics,
-                  predictive policing.
+                  ANPR for multiple countries, facial recognition, vehicle image
+                  gallery, video recording, officer-command chat, route
+                  planning, traffic system integration, automated ticketing,
+                  mobile payments, public portal, analytics, predictive
+                  policing.
                 </p>
               </div>
 
@@ -360,8 +397,9 @@ export default function Documentation() {
                   Administrative Features
                 </p>
                 <p className="ml-4 text-gray-700">
-                  User management and RBAC (Phase 1 basic auth only), system configuration UI,
-                  audit log viewer, report templates customization.
+                  User management and RBAC (Phase 1 basic auth only), system
+                  configuration UI, audit log viewer, report templates
+                  customization.
                 </p>
               </div>
             </div>
@@ -369,9 +407,10 @@ export default function Documentation() {
             <div className="bg-yellow-50 border-l-4 border-yellow-600 p-4 mt-6">
               <p className="font-semibold text-gray-900 mb-2">Important Note</p>
               <p className="text-sm text-gray-700">
-                This project focuses exclusively on building user-facing applications that
-                consume and display data. The underlying infrastructure (LPR hardware, databases)
-                is provided by other parties. Our responsibility is to create intuitive, reliable
+                This project focuses exclusively on building user-facing
+                applications that consume and display data. The underlying
+                infrastructure (LPR hardware, databases) is provided by other
+                parties. Our responsibility is to create intuitive, reliable
                 interfaces that help police officers do their jobs effectively.
               </p>
             </div>
@@ -390,10 +429,21 @@ export default function Documentation() {
                 1. Authentication & Security
               </h3>
               <ul className="space-y-2 ml-4 text-sm text-gray-700">
-                <li>• <strong>Badge Number:</strong> Unique 8-digit identifier for each police officer</li>
-                <li>• <strong>Password:</strong> Secure password with masked input</li>
-                <li>• <strong>Session Management:</strong> Automatic logout after 8 hours or end of shift</li>
-                <li>• <strong>Remember Device:</strong> Optional setting to reduce login frequency on assigned tablets</li>
+                <li>
+                  • <strong>Badge Number:</strong> Unique 8-digit identifier for
+                  each police officer
+                </li>
+                <li>
+                  • <strong>Password:</strong> Secure password with masked input
+                </li>
+                <li>
+                  • <strong>Session Management:</strong> Automatic logout after
+                  8 hours or end of shift
+                </li>
+                <li>
+                  • <strong>Remember Device:</strong> Optional setting to reduce
+                  login frequency on assigned tablets
+                </li>
               </ul>
             </div>
 
@@ -403,13 +453,30 @@ export default function Documentation() {
               </h3>
               <div className="ml-4 text-sm text-gray-700 space-y-3">
                 <div>
-                  <p className="font-semibold text-gray-900">Dashboard Components:</p>
+                  <p className="font-semibold text-gray-900">
+                    Dashboard Components:
+                  </p>
                   <ul className="space-y-2 ml-4">
-                    <li>• <strong>Header Bar:</strong> Officer name and badge number, status indicators (LPR, Database, GPS, 4G)</li>
-                    <li>• <strong>LPR Scanning Section:</strong> LIVE badge, real-time plate feed with timestamp, accuracy, speed</li>
-                    <li>• <strong>Color Coding:</strong> RED (Critical), ORANGE (High), YELLOW (Medium), GRAY (Normal)</li>
-                    <li>• <strong>License Plate Search:</strong> Manual plate search with instant results</li>
-                    <li>• <strong>Alert Statistics:</strong> Count breakdown by severity (Critical, High, Medium, Intercepted)</li>
+                    <li>
+                      • <strong>Header Bar:</strong> Officer name and badge
+                      number, status indicators (LPR, Database, GPS, 4G)
+                    </li>
+                    <li>
+                      • <strong>LPR Scanning Section:</strong> LIVE badge,
+                      real-time plate feed with timestamp, accuracy, speed
+                    </li>
+                    <li>
+                      • <strong>Color Coding:</strong> RED (Critical), ORANGE
+                      (High), YELLOW (Medium), GRAY (Normal)
+                    </li>
+                    <li>
+                      • <strong>License Plate Search:</strong> Manual plate
+                      search with instant results
+                    </li>
+                    <li>
+                      • <strong>Alert Statistics:</strong> Count breakdown by
+                      severity (Critical, High, Medium, Intercepted)
+                    </li>
                   </ul>
                 </div>
               </div>
@@ -420,10 +487,22 @@ export default function Documentation() {
                 3. Vehicle Details View
               </h3>
               <div className="ml-4 text-sm text-gray-700 space-y-2">
-                <p><strong>Vehicle Tab:</strong> License plate, status, make/model, year, color, VIN</p>
-                <p><strong>Owner Tab:</strong> Full name, NIK, date of birth, license number, phone number</p>
-                <p><strong>Violations Tab:</strong> Violation history with date, type, fine amount, payment status</p>
-                <p><strong>Reports Tab:</strong> Related police reports (theft, wanted persons, incidents)</p>
+                <p>
+                  <strong>Vehicle Tab:</strong> License plate, status,
+                  make/model, year, color, VIN
+                </p>
+                <p>
+                  <strong>Owner Tab:</strong> Full name, NIK, date of birth,
+                  license number, phone number
+                </p>
+                <p>
+                  <strong>Violations Tab:</strong> Violation history with date,
+                  type, fine amount, payment status
+                </p>
+                <p>
+                  <strong>Reports Tab:</strong> Related police reports (theft,
+                  wanted persons, incidents)
+                </p>
               </div>
             </div>
 
@@ -432,10 +511,22 @@ export default function Documentation() {
                 4. Additional Mobile Features
               </h3>
               <ul className="space-y-2 ml-4 text-sm text-gray-700">
-                <li>• Real-time Alerts: Audio notification for critical vehicle, vibration for high-priority</li>
-                <li>• Shift Statistics: Total scanned, alerts by category, shift duration and route coverage</li>
-                <li>��� Manual Search: License plate search for checkpoints or stops</li>
-                <li>• Offline Mode: View previously loaded data; queue actions for sync</li>
+                <li>
+                  • Real-time Alerts: Audio notification for critical vehicle,
+                  vibration for high-priority
+                </li>
+                <li>
+                  • Shift Statistics: Total scanned, alerts by category, shift
+                  duration and route coverage
+                </li>
+                <li>
+                  ��� Manual Search: License plate search for checkpoints or
+                  stops
+                </li>
+                <li>
+                  • Offline Mode: View previously loaded data; queue actions for
+                  sync
+                </li>
               </ul>
             </div>
           </div>
@@ -453,10 +544,21 @@ export default function Documentation() {
                 1. Command Center Login
               </h3>
               <ul className="space-y-2 ml-4 text-sm text-gray-700">
-                <li>• <strong>ID Operator:</strong> Operator identifier (e.g., CMD2024001)</li>
-                <li>• <strong>Password:</strong> Secure password (Kata Sandi)</li>
-                <li>• <strong>Role-based Access:</strong> Permissions for operators, supervisors, administrators</li>
-                <li>• <strong>Activity Logging:</strong> All actions logged for audit</li>
+                <li>
+                  • <strong>ID Operator:</strong> Operator identifier (e.g.,
+                  CMD2024001)
+                </li>
+                <li>
+                  • <strong>Password:</strong> Secure password (Kata Sandi)
+                </li>
+                <li>
+                  • <strong>Role-based Access:</strong> Permissions for
+                  operators, supervisors, administrators
+                </li>
+                <li>
+                  • <strong>Activity Logging:</strong> All actions logged for
+                  audit
+                </li>
               </ul>
             </div>
 
@@ -466,16 +568,22 @@ export default function Documentation() {
               </h3>
               <div className="ml-4 text-sm text-gray-700 space-y-3">
                 <div>
-                  <p className="font-semibold text-gray-900 mb-2">Map Features:</p>
+                  <p className="font-semibold text-gray-900 mb-2">
+                    Map Features:
+                  </p>
                   <ul className="space-y-1 ml-4">
                     <li>• Base Map: OpenStreetMap (Leaflet)</li>
                     <li>• Patrol Unit Markers: Blue pins per active unit</li>
-                    <li>• Real-time Updates: Markers move with location changes</li>
+                    <li>
+                      • Real-time Updates: Markers move with location changes
+                    </li>
                     <li>• Map Controls: Zoom, Pan, Recenter, Fullscreen</li>
                   </ul>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900 mb-2">Header Information:</p>
+                  <p className="font-semibold text-gray-900 mb-2">
+                    Header Information:
+                  </p>
                   <ul className="space-y-1 ml-4">
                     <li>• LIVE Badge: Real-time tracking</li>
                     <li>• Unit Aktif: Total on-duty patrol units</li>
@@ -484,7 +592,9 @@ export default function Documentation() {
                   </ul>
                 </div>
                 <div>
-                  <p className="font-semibold text-gray-900 mb-2">Left Sidebar - Active Patrol Units:</p>
+                  <p className="font-semibold text-gray-900 mb-2">
+                    Left Sidebar - Active Patrol Units:
+                  </p>
                   <ul className="space-y-1 ml-4">
                     <li>• Unit ID, Status, Officer Name, Location</li>
                     <li>• Statistics: Vehicles scanned, alerts generated</li>
@@ -500,9 +610,18 @@ export default function Documentation() {
                 3. Patrol Unit Details Panel
               </h3>
               <div className="ml-4 text-sm text-gray-700 space-y-2">
-                <p><strong>Informasi Unit:</strong> ID, Status, Vehicle plate, Location</p>
-                <p><strong>Informasi Petugas:</strong> Name, Badge number, Shift start, Duration</p>
-                <p><strong>Map Integration:</strong> Center on unit, highlight marker, popup information</p>
+                <p>
+                  <strong>Informasi Unit:</strong> ID, Status, Vehicle plate,
+                  Location
+                </p>
+                <p>
+                  <strong>Informasi Petugas:</strong> Name, Badge number, Shift
+                  start, Duration
+                </p>
+                <p>
+                  <strong>Map Integration:</strong> Center on unit, highlight
+                  marker, popup information
+                </p>
               </div>
             </div>
 
@@ -511,14 +630,30 @@ export default function Documentation() {
                 4. Vehicle Report Creation
               </h3>
               <div className="ml-4 text-sm text-gray-700 space-y-2">
-                <p><strong>Form Fields:</strong></p>
+                <p>
+                  <strong>Form Fields:</strong>
+                </p>
                 <ul className="space-y-1 ml-4">
-                  <li>• Nomor Plat (License Plate) - Text input with auto-format</li>
-                  <li>• Tingkat Peringatan (Warning Level) - KRITIS, TINGGI, SEDANG, RENDAH</li>
-                  <li>• Jenis Laporan (Report Type) - Dropdown with report categories</li>
-                  <li>• Deskripsi (Description) - Large text area, minimum 50 characters</li>
+                  <li>
+                    • Nomor Plat (License Plate) - Text input with auto-format
+                  </li>
+                  <li>
+                    • Tingkat Peringatan (Warning Level) - KRITIS, TINGGI,
+                    SEDANG, RENDAH
+                  </li>
+                  <li>
+                    • Jenis Laporan (Report Type) - Dropdown with report
+                    categories
+                  </li>
+                  <li>
+                    • Deskripsi (Description) - Large text area, minimum 50
+                    characters
+                  </li>
                 </ul>
-                <p className="mt-2"><strong>Workflow:</strong> Operator submits report → System alerts all patrol units scanning that plate</p>
+                <p className="mt-2">
+                  <strong>Workflow:</strong> Operator submits report → System
+                  alerts all patrol units scanning that plate
+                </p>
               </div>
             </div>
 
@@ -527,12 +662,20 @@ export default function Documentation() {
                 5. Related Reports View
               </h3>
               <div className="ml-4 text-sm text-gray-700 space-y-2">
-                <p><strong>Features:</strong></p>
+                <p>
+                  <strong>Features:</strong>
+                </p>
                 <ul className="space-y-1 ml-4">
                   <li>• Filter Tabs: Semua, Pencurian, DPO, Aktif</li>
                   <li>• Search: License plate, location, reporter</li>
-                  <li>• Report Table: Plate, Type, Report Number, Status, Location, Reporter, Time</li>
-                  <li>• Actions: View details, update status, add notes, close report</li>
+                  <li>
+                    • Report Table: Plate, Type, Report Number, Status,
+                    Location, Reporter, Time
+                  </li>
+                  <li>
+                    • Actions: View details, update status, add notes, close
+                    report
+                  </li>
                 </ul>
               </div>
             </div>
@@ -583,7 +726,8 @@ export default function Documentation() {
                 ],
               },
               {
-                title: "Workflow 4: Command Center Supervisor - Monitoring Fleet",
+                title:
+                  "Workflow 4: Command Center Supervisor - Monitoring Fleet",
                 steps: [
                   "View Dashboard: Open map view with all active units",
                   "Assess Coverage: Check distribution of patrol units",
@@ -593,7 +737,8 @@ export default function Documentation() {
                 ],
               },
               {
-                title: "Workflow 5: Officer at Checkpoint - Manual Vehicle Check",
+                title:
+                  "Workflow 5: Officer at Checkpoint - Manual Vehicle Check",
                 steps: [
                   "Vehicle Approaches: Officer sees approaching vehicle",
                   "Manual Search: Enter license plate before LPR scans",
@@ -603,10 +748,15 @@ export default function Documentation() {
               },
             ].map((workflow, idx) => (
               <div key={idx}>
-                <h4 className="font-semibold text-gray-900 mb-3">{workflow.title}</h4>
+                <h4 className="font-semibold text-gray-900 mb-3">
+                  {workflow.title}
+                </h4>
                 <div className="ml-4 space-y-2">
                   {workflow.steps.map((step, stepIdx) => (
-                    <div key={stepIdx} className="flex gap-3 text-sm text-gray-700">
+                    <div
+                      key={stepIdx}
+                      className="flex gap-3 text-sm text-gray-700"
+                    >
                       <span className="flex-shrink-0 font-semibold text-blue-600">
                         {stepIdx + 1}.
                       </span>
@@ -625,7 +775,9 @@ export default function Documentation() {
             🎨 User Interface Guidelines
           </h2>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Design Principles</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            Design Principles
+          </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
             {[
@@ -647,7 +799,7 @@ export default function Documentation() {
               },
               {
                 title: "5. Responsive Layout",
-                desc: "Mobile app optimized for 10\" tablets in landscape, web app responsive to various screen sizes",
+                desc: 'Mobile app optimized for 10" tablets in landscape, web app responsive to various screen sizes',
               },
               {
                 title: "6. Professional Aesthetic",
@@ -655,27 +807,60 @@ export default function Documentation() {
               },
             ].map((principle, idx) => (
               <div key={idx} className="border border-gray-200 rounded-lg p-4">
-                <h4 className="font-semibold text-gray-900 mb-2">{principle.title}</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">
+                  {principle.title}
+                </h4>
                 <p className="text-sm text-gray-700">{principle.desc}</p>
               </div>
             ))}
           </div>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Color System</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            Color System
+          </h3>
 
           <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
             {[
-              { color: "red-600", name: "RED (#d32f2f)", usage: "Critical alerts - Stolen vehicles, wanted persons" },
-              { color: "orange-600", name: "ORANGE (#f57c00)", usage: "High priority - Suspended licenses" },
-              { color: "yellow-500", name: "YELLOW (#fbc02d)", usage: "Medium priority - Expired documents" },
-              { color: "blue-600", name: "BLUE (#1976d2)", usage: "Low priority / Info - Minor violations" },
-              { color: "green-600", name: "GREEN (#4caf50)", usage: "Active/Success - System connected" },
-              { color: "gray-600", name: "GRAY (#424242)", usage: "Normal/Neutral - No violations" },
+              {
+                color: "red-600",
+                name: "RED (#d32f2f)",
+                usage: "Critical alerts - Stolen vehicles, wanted persons",
+              },
+              {
+                color: "orange-600",
+                name: "ORANGE (#f57c00)",
+                usage: "High priority - Suspended licenses",
+              },
+              {
+                color: "yellow-500",
+                name: "YELLOW (#fbc02d)",
+                usage: "Medium priority - Expired documents",
+              },
+              {
+                color: "blue-600",
+                name: "BLUE (#1976d2)",
+                usage: "Low priority / Info - Minor violations",
+              },
+              {
+                color: "green-600",
+                name: "GREEN (#4caf50)",
+                usage: "Active/Success - System connected",
+              },
+              {
+                color: "gray-600",
+                name: "GRAY (#424242)",
+                usage: "Normal/Neutral - No violations",
+              },
             ].map((item, idx) => (
-              <div key={idx} className="border border-gray-200 rounded-lg overflow-hidden">
+              <div
+                key={idx}
+                className="border border-gray-200 rounded-lg overflow-hidden"
+              >
                 <div className={`bg-${item.color} h-16`}></div>
                 <div className="p-3">
-                  <p className="font-semibold text-sm text-gray-900">{item.name}</p>
+                  <p className="font-semibold text-sm text-gray-900">
+                    {item.name}
+                  </p>
                   <p className="text-xs text-gray-600 mt-1">{item.usage}</p>
                 </div>
               </div>
@@ -691,28 +876,55 @@ export default function Documentation() {
 
           <div className="space-y-6">
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Hardware Vendor API (LPR vendor)</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">
+                Hardware Vendor API (LPR vendor)
+              </h3>
               <ul className="space-y-2 ml-4 text-sm text-gray-700">
-                <li>• <strong>Purpose:</strong> Query scanned license plate data with timestamp, GPS, camera ID, images</li>
-                <li>• <strong>Data Direction:</strong> Inbound (Query-based)</li>
-                <li>• <strong>Format:</strong> RESTful JSON with API key authentication</li>
+                <li>
+                  • <strong>Purpose:</strong> Query scanned license plate data
+                  with timestamp, GPS, camera ID, images
+                </li>
+                <li>
+                  • <strong>Data Direction:</strong> Inbound (Query-based)
+                </li>
+                <li>
+                  • <strong>Format:</strong> RESTful JSON with API key
+                  authentication
+                </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Government APIs</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">
+                Government APIs
+              </h3>
               <ul className="space-y-2 ml-4 text-sm text-gray-700">
-                <li>• <strong>Vehicle Database (SAMSAT):</strong> Vehicle registration, make/model/color, VIN</li>
-                <li>• <strong>Owner Database:</strong> Owner name, NIK, DOB, contact</li>
-                <li>• <strong>License Database:</strong> Driver's license status, validity</li>
-                <li>• <strong>Violations Database (KORLANTAS):</strong> Violation history and payment status</li>
+                <li>
+                  • <strong>Vehicle Database (SAMSAT):</strong> Vehicle
+                  registration, make/model/color, VIN
+                </li>
+                <li>
+                  • <strong>Owner Database:</strong> Owner name, NIK, DOB,
+                  contact
+                </li>
+                <li>
+                  • <strong>License Database:</strong> Driver's license status,
+                  validity
+                </li>
+                <li>
+                  • <strong>Violations Database (KORLANTAS):</strong> Violation
+                  history and payment status
+                </li>
               </ul>
             </div>
 
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Our Internal Database</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">
+                Our Internal Database
+              </h3>
               <p className="text-sm text-gray-700 ml-4">
-                We manage: User Accounts, Reports, Shift Records, Scan History, Alert Rules, Audit Logs
+                We manage: User Accounts, Reports, Shift Records, Scan History,
+                Alert Rules, Audit Logs
               </p>
             </div>
           </div>
@@ -725,11 +937,14 @@ export default function Documentation() {
           </h2>
 
           <p className="text-gray-700 mb-6">
-            SIPATROLI is designed as a scalable, microservices-driven architecture on Oracle Cloud
-            Infrastructure (OCI) to support real-time data processing from multiple patrol units.
+            SIPATROLI is designed as a scalable, microservices-driven
+            architecture on Oracle Cloud Infrastructure (OCI) to support
+            real-time data processing from multiple patrol units.
           </p>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">OCI Components</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            OCI Components
+          </h3>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-6">
             {[
@@ -769,27 +984,54 @@ export default function Documentation() {
               },
             ].map((item, idx) => (
               <div key={idx} className="border border-gray-200 rounded-lg p-4">
-                <h4 className="font-semibold text-gray-900 mb-2">{item.title}</h4>
+                <h4 className="font-semibold text-gray-900 mb-2">
+                  {item.title}
+                </h4>
                 <ul className="space-y-1">
                   {item.items.map((subitem, sidx) => (
-                    <li key={sidx} className="text-sm text-gray-700">• {subitem}</li>
+                    <li key={sidx} className="text-sm text-gray-700">
+                      • {subitem}
+                    </li>
                   ))}
                 </ul>
               </div>
             ))}
           </div>
 
-          <h3 className="text-lg font-semibold text-gray-900 mb-4">Microservices Architecture</h3>
+          <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            Microservices Architecture
+          </h3>
 
           <div className="space-y-3 text-sm text-gray-700">
             {[
-              { name: "Authentication Service", resp: "Login, RBAC, JWT token management" },
-              { name: "LPR Data Service", resp: "Query hardware vendor API, normalize plates, caching" },
-              { name: "Vehicle Data Service", resp: "Query SAMSAT, owner/license/violation data" },
-              { name: "Alert & Matching Service", resp: "Match plates against active reports, publish alerts" },
-              { name: "Report Management Service", resp: "CRUD for reports, search/filter, audit trail" },
-              { name: "Patrol Tracking Service", resp: "Receive GPS, track shifts, compute stats" },
-              { name: "API Gateway Service", resp: "NGINX/Kong/Traefik - routing, auth, rate limiting" },
+              {
+                name: "Authentication Service",
+                resp: "Login, RBAC, JWT token management",
+              },
+              {
+                name: "LPR Data Service",
+                resp: "Query hardware vendor API, normalize plates, caching",
+              },
+              {
+                name: "Vehicle Data Service",
+                resp: "Query SAMSAT, owner/license/violation data",
+              },
+              {
+                name: "Alert & Matching Service",
+                resp: "Match plates against active reports, publish alerts",
+              },
+              {
+                name: "Report Management Service",
+                resp: "CRUD for reports, search/filter, audit trail",
+              },
+              {
+                name: "Patrol Tracking Service",
+                resp: "Receive GPS, track shifts, compute stats",
+              },
+              {
+                name: "API Gateway Service",
+                resp: "NGINX/Kong/Traefik - routing, auth, rate limiting",
+              },
             ].map((item, idx) => (
               <div key={idx} className="border-l-4 border-blue-600 pl-4">
                 <p className="font-semibold text-gray-900">{item.name}</p>
@@ -801,7 +1043,9 @@ export default function Documentation() {
 
         {/* Data Flow Examples */}
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Data Flow Examples</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Data Flow Examples
+          </h2>
 
           <div className="space-y-8">
             <div>
@@ -813,13 +1057,17 @@ export default function Documentation() {
                   <li>Mobile App searches for plate "B 1234 ABC"</li>
                   <li>API Gateway routes to LPR Data Service</li>
                   <li>LPR Data Service queries hardware vendor cloud</li>
-                  <li>Vehicle Data Service retrieves owner and violation data</li>
+                  <li>
+                    Vehicle Data Service retrieves owner and violation data
+                  </li>
                   <li>Alert & Matching Service checks active reports</li>
                   <li>Alert published to Oracle Streaming topic</li>
                   <li>Mobile App receives real-time alert via WebSocket</li>
                   <li>Command Center Dashboard updates map</li>
                 </ol>
-                <p className="text-xs text-gray-600 mt-3 font-semibold">Total Latency: &lt; 3 seconds</p>
+                <p className="text-xs text-gray-600 mt-3 font-semibold">
+                  Total Latency: &lt; 3 seconds
+                </p>
               </div>
             </div>
 
@@ -829,8 +1077,13 @@ export default function Documentation() {
               </h3>
               <div className="bg-green-50 border border-green-200 rounded-lg p-4">
                 <ol className="space-y-2 list-decimal list-inside text-sm text-gray-700">
-                  <li>PUSKOMANDO operator submits theft report for "B 5678 XYZ"</li>
-                  <li>API Gateway validates JWT, routes to Report Management Service</li>
+                  <li>
+                    PUSKOMANDO operator submits theft report for "B 5678 XYZ"
+                  </li>
+                  <li>
+                    API Gateway validates JWT, routes to Report Management
+                    Service
+                  </li>
                   <li>Report stored in PostgreSQL</li>
                   <li>Plate added to Redis hot list with priority</li>
                   <li>Event published to report-created topic</li>
@@ -844,15 +1097,23 @@ export default function Documentation() {
 
         {/* Scalability */}
         <section className="bg-white rounded-lg shadow-sm border border-gray-200 p-8 mb-8">
-          <h2 className="text-2xl font-bold text-gray-900 mb-6">Scalability & High Availability</h2>
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">
+            Scalability & High Availability
+          </h2>
 
           <div className="overflow-x-auto">
             <table className="w-full text-sm">
               <thead>
                 <tr className="bg-gray-100 border-b border-gray-300">
-                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Requirement</th>
-                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Implementation</th>
-                  <th className="px-4 py-3 text-left font-semibold text-gray-900">Expected Performance</th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">
+                    Requirement
+                  </th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">
+                    Implementation
+                  </th>
+                  <th className="px-4 py-3 text-left font-semibold text-gray-900">
+                    Expected Performance
+                  </th>
                 </tr>
               </thead>
               <tbody>
@@ -907,7 +1168,9 @@ export default function Documentation() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Security Measures</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">
+                Security Measures
+              </h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li>• Secure login with hashed passwords</li>
                 <li>• Session tokens and JWT</li>
@@ -920,7 +1183,9 @@ export default function Documentation() {
             </div>
 
             <div>
-              <h3 className="font-semibold text-gray-900 mb-3">Privacy Requirements</h3>
+              <h3 className="font-semibold text-gray-900 mb-3">
+                Privacy Requirements
+              </h3>
               <ul className="space-y-2 text-sm text-gray-700">
                 <li>• Personal data protection (NIK, names, addresses)</li>
                 <li>• Purpose limitation for law enforcement</li>
@@ -942,14 +1207,32 @@ export default function Documentation() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-sm">
             {[
-              { term: "LPR", def: "License Plate Recognition - Automated system for reading vehicle registration plates" },
-              { term: "DPU", def: "Data Processing Unit - Hardware device processing camera images" },
-              { term: "DPO", def: "Daftar Pencarian Orang (Wanted Person List)" },
-              { term: "NIK", def: "Nomor Induk Kependudukan (National Identity Number)" },
+              {
+                term: "LPR",
+                def: "License Plate Recognition - Automated system for reading vehicle registration plates",
+              },
+              {
+                term: "DPU",
+                def: "Data Processing Unit - Hardware device processing camera images",
+              },
+              {
+                term: "DPO",
+                def: "Daftar Pencarian Orang (Wanted Person List)",
+              },
+              {
+                term: "NIK",
+                def: "Nomor Induk Kependudukan (National Identity Number)",
+              },
               { term: "SIM", def: "Surat Izin Mengemudi (Driver's License)" },
               { term: "VIN", def: "Vehicle Identification Number" },
-              { term: "PUSKOMANDO", def: "Pusat Komando Kepolisian (Police Command Center)" },
-              { term: "SIPATROLI", def: "Sistem Informasi Patroli (Patrol Information System)" },
+              {
+                term: "PUSKOMANDO",
+                def: "Pusat Komando Kepolisian (Police Command Center)",
+              },
+              {
+                term: "SIPATROLI",
+                def: "Sistem Informasi Patroli (Patrol Information System)",
+              },
             ].map((item, idx) => (
               <div key={idx} className="border border-gray-200 rounded-lg p-3">
                 <p className="font-semibold text-gray-900">{item.term}</p>
@@ -964,7 +1247,8 @@ export default function Documentation() {
           <h3 className="text-2xl font-bold mb-3">Document Information</h3>
           <div className="space-y-2 text-blue-100">
             <p>
-              <strong>Document Title:</strong> SIPATROLI Feature Specification Document
+              <strong>Document Title:</strong> SIPATROLI Feature Specification
+              Document
             </p>
             <p>
               <strong>Version:</strong> 1.0
@@ -976,7 +1260,8 @@ export default function Documentation() {
               <strong>Status:</strong> Draft for Review
             </p>
             <p>
-              <strong>Target Audience:</strong> Police Department Leadership, Development Team, Project Stakeholders
+              <strong>Target Audience:</strong> Police Department Leadership,
+              Development Team, Project Stakeholders
             </p>
           </div>
         </section>
