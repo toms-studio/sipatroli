@@ -52,6 +52,8 @@ const App = () => (
             path="/command-center/reports"
             element={<CommandCenterReports />}
           />
+          {/* Documentation Route */}
+          <Route path="/documentation" element={<Documentation />} />
           {/* Catch-all route */}
           <Route path="*" element={<NotFound />} />
         </Routes>
