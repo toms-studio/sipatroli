@@ -193,6 +193,93 @@ export default function Index() {
               </div>
             </div>
           </div>
+
+          {/* Documentation */}
+          <div
+            onClick={() => navigate("/documentation")}
+            className="group cursor-pointer"
+          >
+            <div className="bg-white rounded-xl shadow-lg border border-gray-200 overflow-hidden hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
+              {/* Card Header */}
+              <div className="bg-gradient-to-r from-purple-600 to-purple-700 px-8 py-8">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-14 h-14 bg-white/20 rounded-xl flex items-center justify-center">
+                    <span
+                      className="material-icons text-white"
+                      style={{ fontSize: "32px" }}
+                    >
+                      description
+                    </span>
+                  </div>
+                  <h2 className="text-2xl font-bold text-white">Dokumentasi</h2>
+                </div>
+              </div>
+
+              {/* Card Content */}
+              <div className="px-8 py-6">
+                <p className="text-gray-700 font-semibold mb-2">
+                  Spesifikasi Fitur SIPATROLI
+                </p>
+                <p className="text-gray-600 text-sm mb-6">
+                  Dokumentasi lengkap tentang arsitektur sistem, fitur-fitur,
+                  alur kerja, dan panduan teknis untuk platform SIPATROLI dan
+                  PUSKOMANDO.
+                </p>
+
+                {/* Features */}
+                <div className="space-y-2 mb-6">
+                  <div className="flex items-center gap-2">
+                    <span
+                      className="material-icons text-purple-600"
+                      style={{ fontSize: "18px" }}
+                    >
+                      check_circle
+                    </span>
+                    <span className="text-sm text-gray-700">
+                      Spesifikasi Fitur Lengkap
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span
+                      className="material-icons text-purple-600"
+                      style={{ fontSize: "18px" }}
+                    >
+                      check_circle
+                    </span>
+                    <span className="text-sm text-gray-700">
+                      Arsitektur Sistem Terpadu
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span
+                      className="material-icons text-purple-600"
+                      style={{ fontSize: "18px" }}
+                    >
+                      check_circle
+                    </span>
+                    <span className="text-sm text-gray-700">
+                      Alur Kerja & Integrasi Data
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span
+                      className="material-icons text-purple-600"
+                      style={{ fontSize: "18px" }}
+                    >
+                      check_circle
+                    </span>
+                    <span className="text-sm text-gray-700">
+                      Panduan Teknis & Keamanan
+                    </span>
+                  </div>
+                </div>
+
+                <button className="w-full bg-gradient-to-r from-purple-600 to-purple-700 text-white py-3 rounded-lg font-semibold hover:from-purple-700 hover:to-purple-800 transition-all shadow-md">
+                  Baca Dokumentasi
+                </button>
+              </div>
+            </div>
+          </div>
         </div>
 
         {/* Footer Info */}
