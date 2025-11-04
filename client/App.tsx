@@ -11,6 +11,7 @@ import PolicePatrolVehicleDetails from "./pages/PolicePatrolVehicleDetails";
 import CommandCenterLogin from "./pages/CommandCenterLogin";
 import CommandCenterDashboard from "./pages/CommandCenterDashboard";
 import CommandCenterReports from "./pages/CommandCenterReports";
+import Documentation from "./pages/Documentation";
 
 const queryClient = new QueryClient();
 
