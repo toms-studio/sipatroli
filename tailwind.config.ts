@@ -57,6 +57,10 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        success: "#4CAF50",
+        warning: "#FF9800",
+        critical: "#F44336",
+        info: "#2196F3",
       },
       borderRadius: {
         lg: "var(--radius)",
@@ -80,10 +84,15 @@ export default {
             height: "0",
           },
         },
+        "pulse-dot": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.5" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "pulse-dot": "pulse-dot 2s cubic-bezier(0.4, 0, 0.6, 1) infinite",
       },
     },
   },
