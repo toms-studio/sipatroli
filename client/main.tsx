@@ -1,5 +1,7 @@
 import "./global.css";
 
+import "./global.css";
+
 import { Toaster } from "@/components/ui/toaster";
 import React from "react";
 import ReactDOM from "react-dom/client";
@@ -15,6 +17,7 @@ import PolicePatrolVehicleDetails from "./pages/PolicePatrolVehicleDetails";
 import CommandCenterLogin from "./pages/CommandCenterLogin";
 import CommandCenterDashboard from "./pages/CommandCenterDashboard";
 import CommandCenterReports from "./pages/CommandCenterReports";
+import Documentation from "./pages/Documentation";
 
 const queryClient = new QueryClient();
 
