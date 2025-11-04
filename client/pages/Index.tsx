@@ -19,7 +19,7 @@ export default function Index() {
 
       {/* Main Content */}
       <div className="max-w-6xl mx-auto px-4 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           {/* Police Patrol App */}
           <div
             onClick={() => navigate("/police-patrol/login")}
